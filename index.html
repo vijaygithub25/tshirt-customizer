@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>T-Shirt Customizer</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="preview">
+            <img src="Tshirt.webp" class="tshirt" />
+            <div class="print-area">
+                <p id="previewText">Your Text</p>
+            </div>
+        </div>
+
+        <div class="controls">
+            <center>
+                <h2>Customize Your T-Shirt</h2>
+            </center>
+
+            <label>Enter Text</label>
+            <input type="text" id="textInput" placeholder="Type something..." />
+
+            <label>Text Color</label>
+            <input type="color" id="colorPicker" />
+
+            <label>Font Size</label>
+             <input type="range" id="fontSize" min="12" max="50" value="24" />
+
+            <label>Text Align</label>
+            <select id="align">
+                <option value="center">Center</option>
+                <option value="left">Left</option>
+                <option value="right">Right</option>
+            </select>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
